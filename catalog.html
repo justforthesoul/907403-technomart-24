@@ -14,7 +14,7 @@
 	            <span class="search-search">Поиск:</span>
             </div>
             <a class="bookmark" href="#">Закладки: 0</a>
-            <a class="basket" href="#">Корзина: 0</a>
+            <a class="basket" href="#">Корзина: 10</a>
             <a class="place-order" href="#">Оформить заказ</a>
 		</div>
 		<div class="header-center">
@@ -23,14 +23,17 @@
 				<p class="header-center-phone">+7 (812) 555-05-55</p>
 				<p class="header-center-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 			</div>
-			<ul class="user-navigation">
-                <li class="login-link">
-                	<span>Войти</span>
-                </li>
-                <li class="registration-link">
-                    <span>Регистрация</span>
-                </li>
-            </ul>
+			<div class="authorized-user">
+				<span>Равшан Джамшутович</span>
+				<ul class="user-navigation">
+	                <li class="user-order">
+	                	<a href="#">Мои заказы</a>
+	                </li>
+	                <li class="personal-account">
+	                    <a href="#">Личный кабинет</a>
+	                </li>
+	            </ul>
+	        </div>    
         </div>    
 		<nav class="header-navigation">
             <ul class="site-navigation">
@@ -58,60 +61,99 @@
         </nav>  
 	</header>
 	<main>
-		<h2 class=".visually-hidden">Всё о нас</h2>
-		<section class="all-about-us">
-			<div class="about-us">
-				<h3>Материалы</h3>
-				<a class="about-us-link" href="#">На любой вкус</a>
-			</div>
-			<div class="about-us">
-				<h3>Инструмент</h3>
-				<a class="about-us-link" href="#">На все случаи</a>
-			</div>
-			<div class="about-us">
-				<h3>Техника</h3>
-				<a class="about-us-link" href="#">Для стройки</a>
-			</div>
-			<div class="about-us">
-				<h3>Скидка 50%</h3>
-				<a class="about-us-link" href="#">На 350 товаров</a>
-			</div>
-			<div class="about-us">
-				<h3>Доставка</h3>
-				<a class="about-us-link" href="#">Бесплатно</a>
-			</div>
-			<div class="slider">
-			</div>	
-		</section>
-		<section class="popular-product">
-			<h2>Популярные товары</h2>
-		</section>
-		<section class="popular-manufacturer">
-			<h2>Популярные производители</h2>
-		</section>
-		<section class="services">
-			<h2>Сервисы</h2>
-		</section>
-		<section class="about-company">
-			<div class="company">
-				<h2>Компания «Техномарт»</h2>
-				<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-				<p>Мы можем доставить ваш товар в самые отдаленные точки России! <br>Техномарт работает со многими транспортными компаниями: </p>
+		<section class="page-perforators">
+			<div class="rout">
 				<ul>
-					<li>Деловые линии</li>
-					<li>Автотрейдинг</li>
-					<li>ЖелДорЭкспедиция</li>
+					<li><a class="home" href="index.html">Домой</a></li>
+					<li><a class="catalog" href="catalog.html">Каталог</a></li>
+					<li><a class="tool" href="#">Инструмент</a></li>
+					<li><a class="perforators">Перфораторы</a></li>
 				</ul>
-				<a href="#">Подробнее о компании</a>
 			</div>
-			<div class="main-contacts">
-				<h2>Контакты</h2>
-				<p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-				<a href="#" class="map"><img src="#" width="50" height="50" alt="google-map"></a>
-				<a href="#">Заблудились? Напишите нам!</a>
+			<div class="perforators-header">
+				<h2>Перфораторы</h2>
 			</div>
-		</section>
+			<aside class="perforators-filters">
+				<div class="filter-header">
+					<h3>Фильтр:</h3>
+				</div>
+				<div class="filter-price">
+					<h4>Цена:</h4>
 
+				</div>
+				<div class="filter-manufacturer">
+					<h4>Производители:</h4>
+					<ul>
+						<li>Bosch</li>
+						<li>Интерскоп</li>
+						<li>Makita</li>
+						<li>Dewalt</li>
+						<li>Hitachi</li>
+					</ul>
+				</div>
+				<div class="filter-supply">
+					<h4>Питание:</h4>
+					<ul>
+						<li>Аккумуляторные</li>
+						<li>Сетевые</li>
+					</ul>
+				</div>
+				<span>Показать</span>
+			</aside>
+			<div class="perforators-catalog">
+				<div>
+					<img src="#" alt="Перфоратор BOSCH BFG 3000" width="20" height="20">
+					<h3>Перфоратор BOSCH BFG 3000</h3>
+					<p class="old-price">22500 Р.</p>
+					<a href="">15500 Р.</a>
+				</div>
+				<div>
+					<img src="#" alt="Перфоратор BOSCH BFG 6000" width="20" height="20">
+					<h3>Перфоратор BOSCH BFG 6000</h3>
+					<p class="old-price">30500 Р.</p>
+					<a href="">25500 Р.</a>
+				</div>
+				<div>
+					<img src="#" alt="Перфоратор BOSCH BFG 2000" width="20" height="20">
+					<h3>Перфоратор BOSCH BFG 2000</h3>
+					<a href="">12500 Р.</a>
+				</div>
+				<div>
+					<img src="#" alt="Перфоратор BOSCH BFG 3000" width="20" height="20">
+					<h3>Перфоратор BOSCH BFG 3000</h3>
+					<p class="old-price">22500 Р.</p>
+					<a href="">15500 Р.</a>
+				</div>
+				<div>
+					<img src="#" alt="Перфоратор BOSCH BFG 6000" width="20" height="20">
+					<h3>Перфоратор BOSCH BFG 6000</h3>
+					<p class="old-price">30500 Р.</p>
+					<a href="">25500 Р.</a>
+				</div>
+				<div>
+					<img src="#" alt="Перфоратор BOSCH BFG 2000" width="20" height="20">
+					<h3>Перфоратор BOSCH BFG 2000</h3>
+					<a href="">12500 Р.</a>
+				</div>
+				<div>
+					<img src="#" alt="Перфоратор BOSCH BFG 3000" width="20" height="20">
+					<h3>Перфоратор BOSCH BFG 3000</h3>
+					<p class="old-price">22500 Р.</p>
+					<a href="">15500 Р.</a>
+				</div>
+				<div>
+					<img src="#" alt="Перфоратор BOSCH BFG 6000" width="20" height="20">
+					<h3>Перфоратор BOSCH BFG 6000</h3>
+					<p class="old-price">30500 Р.</p>
+					<a href="">25500 Р.</a>
+				</div>
+				<div>
+					<img src="#" alt="Перфоратор BOSCH BFG 2000" width="20" height="20">
+					<h3>Перфоратор BOSCH BFG 2000</h3>
+					<a href="">12500 Р.</a>
+				</div>
+			</div>
+		</section>	
 	</main>
 	<footer>
 		<div class="footer-top">

@@ -10,9 +10,10 @@
 			<div class="header-logo">
                 <a href="index.html">Техномарт</a>
             </div>
-            <div class="search">
-	            <span class="search-search">Поиск:</span>
-            </div>
+            <form action="https://echo.htmlacademy.ru" method="post">
+		        <label for="search"><span class="visually-hidden">Поиск:</span></label>
+		        <input type="search" id="search"  placeholder="Поиск:">
+			</form>
             <a class="bookmark" href="#">Закладки: 0</a>
             <a class="basket" href="#">Корзина: 10</a>
             <a class="place-order" href="#">Оформить заказ</a>
@@ -24,7 +25,7 @@
 				<p class="header-center-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 			</div>
 			<div class="authorized-user">
-				<span>Равшан Джамшутович</span>
+				<a href="#">Равшан Джамшутович</a>
 				<ul class="user-navigation">
 	                <li class="user-order">
 	                	<a href="#">Мои заказы</a>
@@ -82,30 +83,54 @@
 				<h2>Перфораторы</h2>
 			</div>
 			<section class="perforators-filters">
-				<div class="filter-header">
-					<h3>Фильтр:</h3>
-				</div>
-				<div class="filter-price">
-					<h4>Цена:</h4>
-				</div>
-				<div class="filter-manufacturer">
-					<h4>Производители:</h4>
-					<ul>
-						<li>Bosch</li>
-						<li>Интерскоп</li>
-						<li>Makita</li>
-						<li>Dewalt</li>
-						<li>Hitachi</li>
-					</ul>
-				</div>
-				<div class="filter-supply">
-					<h4>Питание:</h4>
-					<ul>
-						<li>Аккумуляторные</li>
-						<li>Сетевые</li>
-					</ul>
-				</div>
-				<span>Показать</span>
+				<form action="https://echo.htmlacademy.ru" method="post">
+					<div class="filter-header">
+						<h3>Фильтр:</h3>
+					</div>
+					<div class="filter-price">
+						<h4>Цена:</h4>
+						<span>Здесь будет рэйнж</span>
+					</div>
+					<div class="filter-manufacturer">
+						<h4>Производители:</h4>
+						<ul class="filter-manufacturer-list">
+							<li>
+								<input type="checkbox" name="Bosch" id="Bosch" checked>
+								<label for="Bosch">Bosch</label>
+							</li>
+							<li>
+								<input type="checkbox" name="interscol" id="interscol">
+								<label for="interscol">Интерскол</label> 
+							</li>
+							<li>
+								<input type="checkbox" name="Makita" id="Makita" checked>
+								<label for="Makita">Makita</label>
+							</li>
+							<li>
+								<input type="checkbox" name="Dewalt" id="Dewalt">
+								<label for="Dewalt">Dewalt</label>
+							</li>
+							<li>
+								<input type="checkbox" name="Hitachi" id="Hitachi">
+								<label for="Hitachi">Hitachi</label>
+							</li>
+						</ul>
+					</div>
+					<div class="filter-supply">
+						<h4>Питание:</h4>
+						<ul class="filter-supply-list">
+							<li>
+								<input type="radio" name="supply" id="rechargeable" value="rechargeable" checked>
+								<label for="rechargeable">Аккумуляторные</label>
+							</li>
+							<li>
+								<input type="radio" name="supply" id="networking" value="networking">
+								<label for="networking">Сетевые</label>
+							</li>
+						</ul>
+					</div>
+					<button type="submit" class="btn-show">Показать</button>
+				</form>		
 		    </section>
 			<div class="perforators-catalog">
 				<div class="perforators-catalog-sorting">
@@ -268,5 +293,16 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal-content-add-product">
+		<button class="modal-content-close" type="button"></button>
+		<div class="add-product-header">
+		  	<img class="icon" src="#" alt="Иконка">
+		  	<p>Товар добавлен в корзину!</p>
+		</div>
+      	<div class="add-product-button">
+        	<a class="btn active-btn" href="#">Оформить заказ</a>
+        	<a class="btn" href="#">Продолжить Покупки</a>
+        </div>
+    </div>
 </body>
 </html>

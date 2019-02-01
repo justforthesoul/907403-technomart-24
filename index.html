@@ -12,7 +12,7 @@
             </div>
             <form action="https://echo.htmlacademy.ru" method="post">
 		        <label for="search"><span class="visually-hidden">Поиск:</span></label>
-		        <input type="search">
+		        <input type="search" id="search"  placeholder="Поиск:">
 			</form>
             <a class="bookmark" href="#">Закладки: 0</a>
             <a class="basket" href="#">Корзина: 0</a>
@@ -219,7 +219,6 @@
 				<a href="#">Заблудились? Напишите нам!</a>
 			</div>
 		</section>
-
 	</main>
 	<footer>
 		<div class="footer-top">
@@ -284,5 +283,25 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal-content-wtite-us">
+		<button class="modal-content-close" type="button"></button>
+		<form action="https://echo.htmlacademy.ru" method="post">
+			<div class="modal-content-wtite-us-header">
+				<label for="user-field-name">Ваше имя:</label>
+        		<input id="user-field-name" type="text" name="name" placeholder="Имя Фамилия">
+        		<label for="e-mail">Ваш e-mail:</label>
+        		<input id="e-mail" type="email" name="e-mail" placeholder="email@example.com">
+        		<label for="textarea">Текст письма:</label>
+        		<textarea id="textarea" cols="60" rows="6" name="textarea" placeholder="В свободной форме"></textarea>
+			</div>
+			<div class="modal-content-wtite-us-footer">
+				<button class="btn" type="submit">Отправить</button>
+			</div>
+		</form>
+	</div>
+	<div class="modal-content-map">
+		<button class="modal-content-close" type="button"></button>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1549030653142" width="940" height="446"></iframe>
+	</div>
 </body>
 </html>

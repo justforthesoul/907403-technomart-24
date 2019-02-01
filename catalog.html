@@ -84,15 +84,15 @@
 			</div>
 			<section class="perforators-filters">
 				<form action="https://echo.htmlacademy.ru" method="post">
-					<div class="filter-header">
+					<fieldset class="filter-header">
 						<h3>Фильтр:</h3>
-					</div>
-					<div class="filter-price">
-						<h4>Цена:</h4>
+					</fieldset>
+					<fieldset class="filter-price">
+						<legend>Цена:</legend>
 						<span>Здесь будет рэйнж</span>
-					</div>
-					<div class="filter-manufacturer">
-						<h4>Производители:</h4>
+					</fieldset>
+					<fieldset class="filter-manufacturer">
+						<legend>Производители:</legend>
 						<ul class="filter-manufacturer-list">
 							<li>
 								<input type="checkbox" name="Bosch" id="Bosch" checked>
@@ -115,9 +115,9 @@
 								<label for="Hitachi">Hitachi</label>
 							</li>
 						</ul>
-					</div>
-					<div class="filter-supply">
-						<h4>Питание:</h4>
+					</fieldset>
+					<fieldset class="filter-supply">
+						<legend>Питание:</legend>
 						<ul class="filter-supply-list">
 							<li>
 								<input type="radio" name="supply" id="rechargeable" value="rechargeable" checked>
@@ -128,7 +128,7 @@
 								<label for="networking">Сетевые</label>
 							</li>
 						</ul>
-					</div>
+					</fieldset>
 					<button type="submit" class="btn-show">Показать</button>
 				</form>		
 		    </section>
@@ -296,7 +296,6 @@
 	<div class="modal-content-add-product">
 		<button class="modal-content-close" type="button">Закрытие</button>
 		<div class="add-product-header">
-		  	<img class="icon" src="#" alt="Иконка">
 		  	<p>Товар добавлен в корзину!</p>
 		</div>
       	<div class="add-product-button">

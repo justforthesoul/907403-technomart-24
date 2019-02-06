@@ -179,11 +179,22 @@
 				<p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 			</div>
 			<div class="services-main">
-				<div class="services-main-btn">
-					<span>Доставка</span>
-					<span>Гарантия</span>
-					<span>Кредит</span>
-				</div>
+				<form class="services-main-btn">
+					<ul>
+						<li>
+							<input type="radio" name="services" id="delivery" checked>
+							<label for="delivery">Доставка</label>
+						</li>
+						<li>
+							<input type="radio" name="services" id="guarantee">
+							<label for="guarantee">Гарантия</label>
+						</li>
+						<li>
+							<input type="radio" name="services" id="credit">
+							<label for="credit">Кредит</label>
+						</li>
+					</ul>
+				</form>
 				<div class="services-main-info">
 					<div>
 						<h3>Доставка</h3>
@@ -222,7 +233,7 @@
 			</div>
 		</section>
 	</main>
-	<footer>
+	<footer class="footer-index">
 		<div class="footer-top">
 			<div class="footer-logo">
                 <img src="img/PNG/ТЕХНОМАРТ_footer.png"  width="138" height="23" alt="Логотип Техномарт">
@@ -288,7 +299,7 @@
 	<div class="modal-content-wtite-us">
 		<button class="modal-content-close" type="button">Закрытие</button>
 		<form action="https://echo.htmlacademy.ru" method="post">
-			<div class="modal-content-wtite-us-header">
+			<div class="wtite-us-header">
 				<label for="user-field-name">Ваше имя:</label>
         		<input id="user-field-name" type="text" name="name" placeholder="Имя Фамилия">
         		<label for="e-mail">Ваш e-mail:</label>
@@ -296,14 +307,17 @@
         		<label for="textarea">Текст письма:</label>
         		<textarea id="textarea" cols="60" rows="6" name="textarea" placeholder="В свободной форме"></textarea>
 			</div>
-			<div class="modal-content-wtite-us-footer">
+			<div class="wtite-us-footer">
 				<button class="btn" type="submit">Отправить</button>
 			</div>
 		</form>
 	</div>
-	<div class="modal-content-map">
+	<div class="modal-content-map visually-hidden">
 		<button class="modal-content-close" type="button">Закрытие</button>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1549030653142" width="940" height="446"></iframe>
 	</div>
 </body>
 </html>
+
+
+

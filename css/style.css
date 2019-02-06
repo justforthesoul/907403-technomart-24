@@ -407,15 +407,13 @@ h1 {
     border: none;
 }
 
-.perforators-filters .filter-header-header {
+.perforators-filters h2 {
     font-size: 13px;
     line-height: 18px;
     font-weight: normal;
-} 
-
-.filter-header {
+    text-transform: uppercase;
     background-color: rgb(247,243,236);
-}
+} 
 
 .perforators-filters li {
     list-style: none;

@@ -3,13 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HTML Academy: Техномарт</title>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
 		<div class="header-top">
-			<div class="header-logo">
-                <a href="index.html">Техномарт</a>
-            </div>
+			<a class="header-logo" href="#"><img src="img/PNG/ТЕХНОМАРТ_header.png"  width="110" height="18" alt="Логотип Техномарт"></a>
             <form action="https://echo.htmlacademy.ru" method="post">
 		        <label for="search"><span class="visually-hidden">Поиск:</span></label>
 		        <input type="search" id="search"  placeholder="Поиск:">
@@ -61,7 +63,7 @@
             </ul>
         </nav>  
 	</header>
-	<main>
+	<main class="main-catalog">
 		<section class="page-perforators">
 			<div class="breadcrumbs">
 				<ul>
@@ -86,7 +88,7 @@
 				<form action="https://echo.htmlacademy.ru" method="post">
 					<h2 class="visually-hidden">Фильтр товаров</h2>
 					<fieldset class="filter-header">
-						<legend>Фильтр:</legend>
+						<legend class="filter-header-header">Фильтр:</legend>
 					</fieldset>
 					<fieldset class="filter-price">
 						<legend>Цена:</legend>
@@ -234,7 +236,7 @@
 	<footer>
 		<div class="footer-top">
 			<div class="footer-logo">
-                <a href="index.html">Техномарт</a>
+                <img src="img/PNG/ТЕХНОМАРТ_footer.png"  width="138" height="23" alt="Логотип Техномарт">
             </div>
 			<div class="footer-contacts">
 				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
@@ -280,9 +282,9 @@
 				<p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
 			</div>
 			<div class="social-network-link">
-				<a href="#">В контакте</a>
-				<a href="#">Фейсбук</a>
-				<a href="#">Инстаграм</a>
+				<a href="#" aria-label="Вконтакте"></a>
+				<a href="#" aria-label="Фейсбук"></a>
+				<a href="#" aria-label="Инстаграм"></a>
 			</div>
 			<div class="feedback">
 				<p>Обратная связь:</p>

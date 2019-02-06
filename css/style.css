@@ -1,0 +1,649 @@
+/* Стили для всего документа */
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+body {
+    margin: 0 auto;
+    width: 1200px;
+    font-size: 13px;
+    line-height: 24px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: rgb(0,0,0);
+    background: rgb(255,255,255);
+}
+
+/* Стили для header */
+
+/* Общие для стили header */
+
+.main-header {
+    background-color: rgb(243,247,249);
+    font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.main-header a {
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+
+/* Индивидуальные стили для header */
+
+.user-navigation li {
+    list-style: none;
+}
+
+.header-navigation li {
+    list-style: none;
+}
+
+.header-top {
+    background-color: rgb(41,52,73); 
+}
+
+.header-navigation {
+    background-color: rgb(50,66,92);
+    box-shadow: inset 0 -5px 0 0 rgb(41,52,73); 
+}
+
+.header-logo {
+    background-color: rgb(238,54,67);
+    text-align: center;
+    box-shadow: inset 0 -5px 0 0 rgb(181,41,51);
+    display: inline-block;
+    padding: 15px 55px 10px 55px;
+}
+
+.header-logo:hover {
+    background-color: rgb(202,44,55);
+    box-shadow: inset 0 -5px 0 0 rgb(154,33,42);
+}
+
+.header-logo:active {
+    background-color: rgb(186,39,50);
+    box-shadow: inset 0 -5px 0 0 rgb(142,30,38);
+}
+
+.header-top {
+    font-size: 17px;
+    line-height: 18px;
+}
+
+
+.header-top input {
+    background-color: rgb(41,52,73);
+}
+
+.header-top input:hover {
+    background-color: rgb(33,42,58);
+}
+
+.header-top input:focus {
+    background-color: rgb(255,255,255);
+}
+
+.bookmark:hover, .basket:hover {
+    background-color: rgb(33,42,58);
+}
+
+.bookmark:active, .basket:active {
+    background-color: rgb(22,29,41);
+    color: rgb(162,165,169);
+}
+
+.place-order {
+    background-color: rgb(99,166,62); 
+}
+
+.place-order:hover {
+    background-color: rgb(95,187,45); 
+}
+
+.place-order:active {
+    background-color: rgb(81,133,52); 
+    color: rgb(168,194,154);
+}
+
+h1 {
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    color: rgb(238,54,67);
+}
+
+.header-center-contacts a {
+    font-size: 21px;
+    line-height: 21px;
+    color: rgb(238,54,67);
+}
+
+.header-center-contacts p {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(50,66,92);
+}
+
+.authorized-user a {
+    font-size: 21px;
+    line-height: 21px;
+    color: rgb(0,0,0);
+    background-color: rgb(255,255,255);
+}
+
+.authorized-user a:hover {
+    
+}
+
+.authorized-user a:active {
+    color: rgb(178,178,178);
+}
+
+.login-link a, .registration-link a {
+    font-size: 21px;
+    line-height: 21px;
+    color: rgb(0,0,0);
+    background-color: rgb(255,255,255);
+}
+
+.login-link a:hover, .registration-link a:hover {
+    color: rgb(238,54,67);
+}
+
+.login-link a:active, .registration-link a:active {
+    color: rgb(178,178,178);
+}
+
+.user-order a, .personal-account a {
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: underline;
+    color: rgb(50,66,92);
+    background-color: rgb(243,247,249);
+}
+
+.user-order a:hover, .personal-account a:hover {
+    color: rgb(238,54,67);
+}
+
+.user-order a:active, .personal-account a:active {
+    color: rgb(178,178,178);
+}
+
+.site-navigation a {
+    font-size: 17px;
+    line-height: 17px;
+    color: rgb(255,255,255);
+}
+
+.site-navigation a:hover {
+    background-color: rgb(41,52,73);
+}
+
+.site-navigation a:active {
+    color: rgb(142,147,156);
+    background-color: rgb(29,39,57);
+}
+
+/* Стили для main */
+
+/* Общие для стили main */
+
+.main-index a {
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+
+/* Индивидуальные стили для main */
+
+/* Промо блок главная */
+
+.main-promo h3 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    color: rgb(255,255,255);
+}
+
+.promo-link {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,.1);
+}
+
+.promo-link:hover {
+    background-color: rgba(0,0,0,.2);
+}
+
+.promo-link:active {
+    background-color: rgba(0,0,0,.3);
+}
+
+.promo-material {
+    background-color: rgb(255,191,71);
+}
+
+.promo-tool {
+    background-color: rgb(59,188,227);
+}
+
+.promo-technic {
+    background-color: rgb(220,145,216);
+}
+
+.promo-discount {
+    background-color: rgb(142,215,143);
+}
+
+.promo-delivery {
+    background-color: rgb(255,192,71);
+}
+
+.slide-text a {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: rgb(238,54,67);
+}
+
+.slide-text a:hover {
+    background-color: rgb(202,44,55);
+}
+
+.slide-text a:active {
+    background-color: rgb(186,39,50);
+}
+
+/* Популярные продукты */
+
+.popular-product-header, .popular-manufacturer-header {
+    background-color: rgb(249,245,240); 
+}
+
+.popular-product-header h2, .popular-manufacturer-header h2 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: rgb(103,114,131); 
+}
+
+.popular-product-header a, .popular-manufacturer-header a {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: rgb(238,54,67);
+
+}
+
+.popular-product-list li {
+    list-style: none;
+    border: 1px solid rgb(234,234,234)
+}
+
+.popular-product-list a {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    color: rgb(0,0,0);
+}
+
+.old-price {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    color: rgb(169,169,169);
+    text-decoration: line-through;
+}
+
+.new-price {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    color: rgb(255,255,255);
+    background-image: url(../img/SVG/red-button.svg);
+    background-repeat:  no-repeat;
+}
+
+/* Популярные производители */
+
+.popular-manufacturer li {
+    list-style: none;
+    border: 1px solid rgb(234,234,234)
+}
+
+/* О компании */
+
+.about-company h2 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: rgb(0,0,0); 
+}
+
+.about-company li {
+    list-style: none;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: rgb(0,0,0); 
+}
+
+.company a {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: rgb(238,54,67);
+}
+
+.main-contacts a:last-child {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: rgb(238,54,67);
+}
+
+/* Стили для main каталога */
+
+/* Общие для стили main каталога */
+
+.main-catalog a {
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+
+/* Индивидуальные стили для main  каталога*/
+
+/* Оформление breadcrumbs */
+
+.breadcrumbs li {
+    list-style: none;
+}   
+
+.breadcrumbs a {
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: rgb(0,0,0);
+} 
+
+/* Оформление заголовка */
+
+.perforators-header {
+    font-family: "Cuprum", "Arial", sans-serif;
+    background-color: rgb(242,246,248);
+}
+
+.perforators-header h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    color: rgb(50,66,92);
+    text-transform: uppercase;
+}
+
+/* Оформление фильтра */
+
+.perforators-filters legend {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+} 
+
+.perforators-filters fieldset {
+    border: none;
+}
+
+.perforators-filters .filter-header-header {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+} 
+
+.filter-header {
+    background-color: rgb(247,243,236);
+}
+
+.perforators-filters li {
+    list-style: none;
+}
+
+.perforators-filters label {
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.perforators-filters button {
+    background-color: rgb(255,255,255);
+    border: 1px solid rgb(229,229,229);
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+/* Оформление сортировки */
+
+/* Оформление каталога */
+
+.perforators-catalog-perforators li {
+    list-style: none;
+    border: 1px solid rgb(234,234,234)
+}
+
+.perforators-catalog-perforators a {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    color: rgb(0,0,0);
+}
+
+/* Оформление списка страниц */
+
+/* Оформление *Пара слов о перфораторах* */
+
+.perforators-article {
+    background-color: rgb(242,246,248);
+}
+
+.perforators-article h2 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+/* Стили для footer */
+
+/* Обшие стили для footer */
+
+footer {
+    font-family: "Cuprum", "Arial", sans-serif;
+    background-color: rgb(50,66,92);
+}
+
+/* Индивидуальные стили для footer */
+
+.footer-logo {
+    background-color: rgb(238,54,67);
+    text-align: center;
+    box-shadow: inset 0 -5px 0 0 rgb(181,41,51);
+    display: inline-block;
+    padding: 22px 41px 17px 41px;
+}
+
+.footer-contacts p {
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(243,247,249);
+}
+
+.additional-references {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.additional-references a {
+    text-decoration: none;
+}
+
+.additional-references li {
+    list-style: none;
+}
+
+.additional-references-top a {
+    color: rgb(243,247,249);
+}
+
+.additional-references-bottom a {
+    color: rgb(255,209,158);
+}
+
+.additional-references a:hover {
+    text-decoration: underline;
+}
+
+.additional-references-top a:active {
+    color: rgb(146,156,170);
+    text-decoration: none;
+}
+
+.additional-references-bottom a:active {
+    color: rgb(153,138,110);
+    text-decoration: none;
+}
+
+.social-network-link a {
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background: rgb(33,42,58);
+    display: inline-block;
+}
+
+.social-network-link a:hover, .social-network-link a:active {
+    background: rgb(238,54,67);
+}
+
+.social-network-link a:first-child {
+    background-image: url(../img/SVG/icon-vk.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-network-link a:nth-child(2) {
+    background-image: url(../img/SVG/icon-fb.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-network-link a:last-child {
+    background-image: url(../img/SVG/icon-insta.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer-bottom {
+    background-color: rgb(41,52,73);
+    font-size: 16px;
+    line-height: 18px;
+    color: rgb(255,255,255);
+}
+
+.feedback a, .developed a {
+    color: rgb(255,209,128);
+    text-decoration: none;    
+}
+
+.feedback a:hover, .developed a:hover {
+    text-decoration: underline;    
+}
+
+.feedback a:active, .developed a:active {
+    color: rgb(238,54,67);
+    text-decoration: none;    
+}
+
+/* Стили для модалок */
+
+/* Модалка на главной */
+
+.modal-content-wtite-us {
+    font-family: "Cuprum", "Arial", sans-serif;
+    box-shadow: inset 0 7px 0 0 rgb(255,83,87);
+}
+
+.modal-content-wtite-us-header label {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.modal-content-wtite-us-footer {
+    background-color: rgb(244,244,244);
+}
+
+.modal-content-wtite-us-header input, .modal-content-wtite-us-header textarea {
+    border: 2px solid rgb(215,220,222);
+    border-radius: 2px;
+}
+
+.modal-content-wtite-us-header input:hover, .modal-content-wtite-us-header textarea:hover {
+    border: 2px solid rgb(181,181,181);
+}
+
+.modal-content-wtite-us-header input:focus, .modal-content-wtite-us-header textarea:focus {
+    border: 2px solid rgb(238,54,67);
+}
+
+.modal-content-wtite-us-footer button {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: rgb(255,255,255);
+    border: none;
+    background-color: rgb(238,54,67);
+}
+
+/* Модалка в каталоге */
+
+.modal-content-add-product {
+    font-family: "Cuprum", "Arial", sans-serif;
+    box-shadow: inset 0 7px 0 0 rgb(255,83,87);
+}
+
+.modal-content-add-product p {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.add-product-button {
+    background-color: rgb(244,244,244);
+}
+
+.add-product-button a {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255,255,255);
+    border: none;
+    background-color: rgb(238,54,67);
+}
+
+.add-product-button a:last-child {
+    color: rgb(0,0,0);
+    background-color: rgb(255,255,255);
+}

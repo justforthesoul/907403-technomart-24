@@ -360,7 +360,20 @@ body {
 
 .main-promo {
     display: flex;
+
+}
+
+.promo-left, .promo-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between; 
     justify-content: space-between;
+    min-height: 410px;
+}
+
+.promo-right {
+    justify-content: flex-end;
 }
 
 .main-promo h3 {
@@ -638,11 +651,14 @@ body {
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 20px;
+    border-top: 1px solid rgb(64,80,105);
+    border-bottom: 1px solid rgb(41,52,73); 
 }
 
 .services-main-btn span:hover {
     color: rgb(50,66,92);
-    background-color: rgb(255,255,255); 
+    background-color: rgb(255,255,255);
+    border: none;
 }
 
 .services-main-info h3 {
@@ -655,19 +671,22 @@ body {
     margin: 0;
 }
 
+.services-main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
 .services-main-info p {
     width: 278px;
 }
 
 .services-main-btn {
-    float: left;
-    padding-top: 80px;
+ 
 }
 
 .services-main-info {
-    float: right;
     width: 620px;
-    padding-top: 80px;
 }
 
 /* О компании */

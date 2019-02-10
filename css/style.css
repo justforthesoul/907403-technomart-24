@@ -21,6 +21,11 @@ body {
     background: rgb(255,255,255);
 }
 
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
 /* Стили для header */
 
 /* Общие для стили header */
@@ -28,6 +33,7 @@ body {
 .main-header {
     background-color: rgb(243,247,249);
     font-family: "Cuprum", "Arial", sans-serif;
+    min-height: 320px;
 }
 
 .main-header a {
@@ -37,21 +43,16 @@ body {
 
 /* Индивидуальные стили для header */
 
-.user-navigation li {
-    list-style: none;
-}
-
-.header-navigation li {
-    list-style: none;
-}
+/* Индивидуальные стили для header-top */
 
 .header-top {
     background-color: rgb(41,52,73); 
-}
+    font-size: 17px;
+    line-height: 18px;
+} 
 
-.header-navigation {
-    background-color: rgb(50,66,92);
-    box-shadow: inset 0 -5px 0 0 rgb(41,52,73); 
+.header-top .container {
+    display: flex;
 }
 
 .header-logo {
@@ -60,6 +61,7 @@ body {
     box-shadow: inset 0 -5px 0 0 rgb(181,41,51);
     display: inline-block;
     padding: 15px 55px 10px 55px;
+    position: absolute;
 }
 
 .header-logo:hover {
@@ -72,39 +74,87 @@ body {
     box-shadow: inset 0 -5px 0 0 rgb(142,30,38);
 }
 
-.header-top {
-    font-size: 17px;
-    line-height: 18px;
-}
-
-
 .header-top input {
     background-color: rgb(41,52,73);
+    background-image: url(../img/SVG/icon-search-repose.svg);
+    background-repeat: no-repeat;
+    background-position: 18px, 50%;
+    border: none;
+    width: 270px;
+    padding: 11.5px 0 11.5px 0;
+    margin-left: 220px;
+    padding-left: 49px;
 }
 
 .header-top input:hover {
     background-color: rgb(33,42,58);
+    background-image: url(../img/SVG/icon-search-hover.svg);
 }
 
 .header-top input:focus {
     background-color: rgb(255,255,255);
+    background-image: url(../img/SVG/icon-search-focus.svg);
 }
 
-.bookmark:hover, .basket:hover {
+.header-top input::placeholder {
+    color: rgb(255,255,255);
+}
+
+.bookmark {
+    background-image: url(../img/SVG/icon-bookmark-repose.svg);
+    background-repeat: no-repeat;
+    background-position: 17px, 50%;
+    padding: 11.5px 0px 11.5px 44px;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+.bookmark:hover {
     background-color: rgb(33,42,58);
+    background-image: url(../img/SVG/icon-bookmark-hover.svg);
 }
 
-.bookmark:active, .basket:active {
+.bookmark:active {
     background-color: rgb(22,29,41);
+    background-image: url(../img/SVG/icon-bookmark-active.svg);
+    color: rgb(162,165,169);
+}
+
+.basket {
+    background-image: url(../img/SVG/icon-cart-repose.svg);
+    background-repeat: no-repeat;
+    background-position: 18px, 50%;
+    padding: 11.5px 0px 11.5px 50px;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+.basket:hover {
+    background-color: rgb(33,42,58);
+    background-image: url(../img/SVG/icon-cart-hover.svg);
+}
+
+.basket:active {
+    background-color: rgb(22,29,41);
+    background-image: url(../img/SVG/icon-cart-active.svg);
     color: rgb(162,165,169);
 }
 
 .basket-active {
     background-color: rgb(238,54,67);
+    background-image: url(../img/SVG/icon-cart-catalog.svg);
+    background-repeat: no-repeat;
+    background-position: 18px, 50%;
+    padding: 11.5px 0px 11.5px 50px;
+    width: 150px;
+    box-sizing: border-box; 
 } 
 
 .place-order {
-    background-color: rgb(99,166,62); 
+    background-color: rgb(99,166,62);
+    padding: 11.5px 0px 11.5px 0px;
+    width: 150px;
+    text-align: center; 
 }
 
 .place-order:hover {
@@ -116,38 +166,54 @@ body {
     color: rgb(168,194,154);
 }
 
+/* Индивидуальные стили для header-center */
+
+.header-center {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-left: 52px;
+}
+
 .header-center h1 {
     font-size: 16px;
     line-height: 23px;
     font-style: italic;
     color: rgb(238,54,67);
+    margin: 0;
+    padding-top: 46px;
 }
 
-.header-center-contacts a {
+.header-center-contacts {
+    margin-left: 40px;
+}
+
+.header-center-contacts, .user-navigation  {
+    padding-top: 46px;
+}
+
+.header-center-contacts .telephone {
     font-size: 21px;
     line-height: 21px;
     color: rgb(238,54,67);
+    border: 3px solid rgb(255,255,255);
+    padding: 7.5px 50px 7.5px 71px;
+    background-image: url(../img/SVG/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-position: 13px, 50%;
 }
 
 .header-center-contacts p {
     font-size: 14px;
     line-height: 24px;
     color: rgb(50,66,92);
+    text-align: center;
+    margin: 0;
 }
 
-.authorized-user a {
-    font-size: 21px;
-    line-height: 21px;
-    color: rgb(0,0,0);
-    background-color: rgb(255,255,255);
-}
-
-.authorized-user a:hover {
-    
-}
-
-.authorized-user a:active {
-    color: rgb(178,178,178);
+.user-navigation li {
+    list-style: none;
+    display: inline-block;
 }
 
 .login-link a, .registration-link a {
@@ -157,12 +223,78 @@ body {
     background-color: rgb(255,255,255);
 }
 
-.login-link a:hover, .registration-link a:hover {
+.login-link a {
+    background-image: url(../img/SVG/icon-login.svg);
+    background-repeat: no-repeat;
+    background-position: 14px, 50%;
+    padding: 10px 27px 10px 47px;
+    margin-right: 7px;
+}
+
+.registration-link a {
+    padding: 10px 25px 10px 25px;
+}
+
+.login-link a:hover {
+    color: rgb(238,54,67);
+    background-image: url(../img/SVG/icon-login-hover.svg);
+}
+
+.registration-link a:hover {
     color: rgb(238,54,67);
 }
 
-.login-link a:active, .registration-link a:active {
+.login-link a:active {
     color: rgb(178,178,178);
+    background-image: url(../img/SVG/icon-login.svg);
+}
+
+.registration-link a:active {
+    color: rgb(178,178,178);
+}
+
+/* Индивидуальные стили для header-center-catalog */
+
+.authorized-user {
+    padding-top: 57px;
+}
+
+.authorized-user .authorized-user-name {
+    font-size: 21px;
+    line-height: 21px;
+    color: rgb(0,0,0);
+    background-color: rgb(255,255,255);
+    padding: 10.5px 67px 10.5px 48px;
+    background-image: url(../img/SVG/icon-logout.svg), url(../img/SVG/icon-user.svg);
+    background-repeat: no-repeat;
+    background-position: 270px, 13px;
+}
+
+.authorized-user .authorized-user-name:hover {
+    background-image: url(../img/SVG/icon-logout-hover.svg), url(../img/SVG/icon-user-hover.svg);
+}
+
+.authorized-user .authorized-user-name:active {
+    color: rgb(178,178,178);
+    background-image: url(../img/SVG/icon-logout.svg), url(../img/SVG/icon-user.svg);
+}
+
+.authorized-navigation {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.user-order {
+    padding-left: 18px;
+}
+
+.personal-account {
+    margin-left: 32px;
+}
+
+.authorized-navigation li:first-child {
+    list-style: none;
 }
 
 .user-order a, .personal-account a {
@@ -170,7 +302,6 @@ body {
     line-height: 18px;
     text-decoration: underline;
     color: rgb(50,66,92);
-    background-color: rgb(243,247,249);
 }
 
 .user-order a:hover, .personal-account a:hover {
@@ -181,10 +312,28 @@ body {
     color: rgb(178,178,178);
 }
 
-.site-navigation a {
+/* Индивидуальные стили для header-navigation */
+
+.header-navigation {
+    background-color: rgb(50,66,92);
+    box-shadow: inset 0 -5px 0 0 rgb(41,52,73);
+    margin-top: 30px; 
+}
+
+.header-navigation ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+.header-navigation a {
+    display: block;
     font-size: 17px;
     line-height: 17px;
     color: rgb(255,255,255);
+    padding: 20px 30.3px;
 }
 
 .site-navigation a:hover {
@@ -208,6 +357,11 @@ body {
 /* Индивидуальные стили для main */
 
 /* Промо блок главная */
+
+.main-promo {
+    display: flex;
+    justify-content: space-between;
+}
 
 .main-promo h3 {
     font-family: "Cuprum", "Arial", sans-serif;
@@ -234,22 +388,42 @@ body {
 
 .promo-material {
     background-color: rgb(255,191,71);
+    background-image: url(../img/SVG/icon-1.svg);
+    background-repeat: no-repeat;
+    background-position: 87%;
 }
 
 .promo-tool {
     background-color: rgb(59,188,227);
+    background-image: url(../img/SVG/icon-2.svg);
+    background-repeat: no-repeat;
+    background-position: 87%;
 }
 
 .promo-technic {
     background-color: rgb(220,145,216);
+    background-image: url(../img/SVG/icon-3.svg);
+    background-repeat: no-repeat;
+    background-position: 87%;
 }
 
 .promo-discount {
     background-color: rgb(142,215,143);
+    background-image: url(../img/SVG/icon-4.svg);
+    background-repeat: no-repeat;
+    background-position: 87%;
 }
 
 .promo-delivery {
     background-color: rgb(255,192,71);
+    background-image: url(../img/SVG/icon-5.svg);
+    background-repeat: no-repeat;
+    background-position: 87%;
+}
+
+.main-promo .promo {
+    min-height: 123px;
+    width: 300px;
 }
 
 .slide-text {
@@ -287,6 +461,13 @@ body {
 
 .popular-product-header, .popular-manufacturer-header {
     background-color: rgb(249,245,240); 
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 24px;
+    margin-top: 10px;
 }
 
 .popular-product-header h2, .popular-manufacturer-header h2 {
@@ -296,7 +477,10 @@ body {
     text-transform: uppercase;
     font-weight: normal;
     color: rgb(50,66,92); 
+    padding-top: 5px;
+    padding-bottom: 4px;
 }
+
 
 .popular-product-header a, .popular-manufacturer-header a {
     font-family: "Cuprum", "Arial", sans-serif;
@@ -304,7 +488,13 @@ body {
     line-height: 18px;
     text-transform: uppercase;
     background-color: rgb(238,54,67);
-}
+    border-radius: 1px;
+    width: 253px;
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10.8px;
+ }
 
 .popular-product-header a:hover, .popular-manufacturer-header a:hover {
     background-color: rgb(202,44,55);
@@ -314,16 +504,37 @@ body {
     background-color: rgb(186,39,50);
 }
 
-.popular-product-list li {
-    list-style: none;
-    border: 1px solid rgb(229,229,229)
+.popular-product-list ul {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
+
+.popular-product-list li {
+    width: 220px;
+    min-height: 318px;
+    list-style: none;
+    border: 1px solid rgb(229,229,229);
+    margin-top: 20px;
+}
+
+.popular-product-list li:hover {
+    border: 1px solid rgb(255,255,255);
+    box-shadow: 0 8px 25px 5px rgba(41,52,73,0.2);
+}    
 
 .popular-product-list a {
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
     color: rgb(0,0,0);
+}
+
+.popular-product-list p, .popular-product-list h3 {
+    text-align: center;
 }
 
 .old-price {
@@ -339,37 +550,97 @@ body {
     line-height: 18px;
     font-weight: bold;
     color: rgb(255,255,255);
+    padding: 10px;
     background-image: url(../img/SVG/red-button.svg);
+    background-position: 50%, 50%;
     background-repeat:  no-repeat;
 }
 
+.only-new-price {
+    margin-top: 53px;
+}
 /* Популярные производители */
 
-.popular-manufacturer li {
+.popular-manufacturer-list ul {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 0;
+}
+
+.popular-manufacturer-list li {
+    width: 220px;
+    min-height: 145px;
     list-style: none;
-    border: 1px solid rgb(234,234,234)
+    border: 1px solid rgb(234,234,234);
+    margin-top: 20px;
+}
+
+.popular-manufacturer-list a {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.popular-manufacturer-list li:hover {
+    border: 1px solid rgb(255,255,255);
+    box-shadow: 0 8px 25px 5px rgba(41,52,73,0.2);
+}
+
+.popular-manufacturer-list li:active {
+    border: 1px solid rgb(255,255,255);
+    box-shadow: 0 5px 15px 0px rgba(41,52,73,0.2);
+    opacity: 0.5;
 }
 
 /* Сервисы */
 
-.services-main-btn li {
+.services {
+    background-color: rgb(244,248,249);
+    min-height: 522px;
+}
+
+.services-header h2 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: rgb(0,0,0);
+    padding-top: 68px;
+}
+
+.services-header p {
+    width: 400px;
+}
+
+.services-main-btn ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.services-main-btn input[type=radio] {
-    display: none;
+.services-main-btn ul {
+    width: 240px;
 }
 
-.services-main-btn label {
+.services-main-btn span {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 21px;
     line-height: 30px;
     font-weight: bold;
     color: rgb(255,255,255);
-    background-color: rgb(50,66,92); 
+    background-color: rgb(50,66,92);
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
 }
 
-.services-main-btn label:hover {
+.services-main-btn span:hover {
     color: rgb(50,66,92);
     background-color: rgb(255,255,255); 
 }
@@ -381,9 +652,32 @@ body {
     font-weight: normal;
     text-transform: uppercase;
     color: rgb(50,66,92);
+    margin: 0;
+}
+
+.services-main-info p {
+    width: 278px;
+}
+
+.services-main-btn {
+    float: left;
+    padding-top: 80px;
+}
+
+.services-main-info {
+    float: right;
+    width: 620px;
+    padding-top: 80px;
 }
 
 /* О компании */
+
+.about-company {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 .about-company h2 {
     font-family: "Cuprum", "Arial", sans-serif;
@@ -392,6 +686,19 @@ body {
     font-weight: normal;
     text-transform: uppercase;
     color: rgb(0,0,0); 
+}
+
+.about-company .company {
+    width: 520px; 
+}
+
+.company p:nth-child(3) {
+    width: 390px;
+}
+
+.about-company .main-contacts {
+    width: 300px; 
+    padding-bottom: 67px;
 }
 
 .about-company li {
@@ -408,6 +715,14 @@ body {
     line-height: 18px;
     text-transform: uppercase;
     background-color: rgb(238,54,67);
+}
+
+.company a {
+    padding: 10.5px 41px 10.5px 41px;
+}
+
+.main-contacts a:last-child {
+    padding: 10.5px 61.5px 10.5px 61.5px;
 }
 
 .company a:hover, .main-contacts a:last-child:hover {
@@ -429,10 +744,23 @@ body {
 
 /* Индивидуальные стили для main  каталога*/
 
+.perforators-filters {
+    display: inline-block;
+    width: 220px;
+    vertical-align: top;
+}
+
+.perforators-catalog {
+    width: 700px;
+    display: inline-block;
+    margin-left: 16px;
+}
+
 /* Оформление breadcrumbs */
 
 .breadcrumbs li {
     list-style: none;
+    display: inline-block;
 }   
 
 .breadcrumbs a {
@@ -455,6 +783,9 @@ body {
     font-weight: normal;
     color: rgb(50,66,92);
     text-transform: uppercase;
+    padding-left: 29px;
+    padding-top: 29.5px;
+    padding-bottom: 29.5px;
 }
 
 /* Оформление фильтра */
@@ -475,7 +806,9 @@ body {
     line-height: 18px;
     font-weight: normal;
     text-transform: uppercase;
+    padding: 10px 0 10px 18px;
     background-color: rgb(247,243,236);
+    border-radius: 1px;
 } 
 
 .perforators-filters li {
@@ -498,44 +831,70 @@ body {
 
 /* Оформление сортировки */
 
-.perforators-catalog-sorting {
+.sorting {
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
     background-color: rgb(247,243,236);
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.perforators-catalog-sorting li {
+.sorting-by li {
     list-style: none;
+    display: inline-block;
 }
 
-.perforators-catalog-sorting a {
+.sorting-by a {
     color: rgb(202,202,202);
     border-bottom: 1px dashed rgb(238,54,67);
 }
 
-.perforators-catalog-sorting a:hover {
+.sorting-by a:hover {
     color: rgb(0,0,0);
     border-bottom: 1px solid rgb(238,54,67);
 }
 
-.perforators-catalog-sorting a:active {
+.sorting-by a:active {
     color: rgb(238,54,67);
     border-bottom: none;
 }
 
 /* Оформление каталога */
 
-.perforators-catalog-perforators li {
-    list-style: none;
-    border: 1px solid rgb(234,234,234)
+.perforators-catalog-list {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
 
-.perforators-catalog-perforators a {
+.perforators-catalog-list li {
+    list-style: none;
+    border: 1px solid rgb(234,234,234);
+    width: 220px;
+    min-height: 318px;
+    margin-top: 20px;
+}
+
+.perforators-catalog-list li:hover {
+    border: 1px solid rgb(255,255,255);
+    box-shadow: 0 8px 25px 5px rgba(41,52,73,0.2);
+}
+
+.perforators-catalog-list a {
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
     color: rgb(0,0,0);
+}
+
+.perforators-catalog-list p, .perforators-catalog-list h3 {
+    text-align: center;
 }
 
 /* Оформление списка страниц */
@@ -559,6 +918,7 @@ body {
 
 .perforators-catalog-page li {
     list-style: none;
+    display: inline-block;
 }
 
 .perforators-catalog-page .active-page-btn {
@@ -571,9 +931,12 @@ body {
 
 .perforators-article {
     background-color: rgb(242,246,248);
+    min-height: 261px;
+    margin-bottom: -13px;
 }
 
 .perforators-article h2 {
+    padding-top: 66px;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
     line-height: 30px;
@@ -592,23 +955,60 @@ body {
 
 /* Индивидуальные стили для footer */
 
+/* Индивидуальные стили для footer-top */
+
+.footer-top {
+    min-height: 193px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer-logo {
     background-color: rgb(238,54,67);
     text-align: center;
     box-shadow: inset 0 -5px 0 0 rgb(181,41,51);
     display: inline-block;
     padding: 22px 41px 17px 41px;
+    position: absolute;
+}
+
+.footer-logo:hover {
+    background-color: rgb(202,44,55);
+    box-shadow: inset 0 -5px 0 0 rgb(154,33,42);
+}
+
+.footer-logo:active {
+    background-color: rgb(186,39,50);
+    box-shadow: inset 0 -5px 0 0 rgb(142,30,38);
+}
+
+.footer-contacts {
+    width: 323px;
+    padding-top: 100px;
+    padding-left: 3px;
 }
 
 .footer-contacts p {
     font-size: 18px;
     line-height: 24px;
     color: rgb(243,247,249);
+    margin: 0;
 }
 
 .additional-references {
     font-size: 18px;
     line-height: 24px;
+    padding-top: 40px;
+    width: 550px;
+}
+
+.additional-references ul {
+    margin: 0;
+    padding: 0;
+}
+
+.additional-references ul:last-child {
+    padding-top: 35px;
 }
 
 .additional-references a {
@@ -617,6 +1017,16 @@ body {
 
 .additional-references li {
     list-style: none;
+    display: inline-block;
+}
+
+.additional-references-top, .additional-references-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.additional-references-bottom li:first-child {
+    padding-left: 23px;
 }
 
 .additional-references-top a {
@@ -640,6 +1050,36 @@ body {
     color: rgb(153,138,110);
     text-decoration: none;
 }
+
+/* Индивидуальные стили для footer-bottom */
+
+.footer-bottom {
+    min-height: 107px;
+}
+
+.footer-bottom .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 35px;
+}
+
+.copyright {
+    width: 230px;
+}
+
+.social-network-link {
+    padding-left: 160px;
+}
+
+.feedback {
+    padding-left: 118px;
+}
+
+.developed {
+    padding-left: 54px;
+}
+
 
 .social-network-link a {
     width:40px;
@@ -678,9 +1118,13 @@ body {
     color: rgb(255,255,255);
 }
 
+.feedback p, .developed p, .copyright p {
+    margin: 0;
+}
+
 .feedback a, .developed a {
     color: rgb(255,209,128);
-    text-decoration: none;    
+    text-decoration: none;  
 }
 
 .feedback a:hover, .developed a:hover {
@@ -698,16 +1142,42 @@ body {
 
 .modal-content-wtite-us {
     font-family: "Cuprum", "Arial", sans-serif;
-    box-shadow: inset 0 7px 0 0 rgb(255,83,87);
+    box-shadow: inset 0 7px 0 0 rgb(255,83,87), 0 20px 60px -2px black;
+    width: 620px;
+    margin: 0 auto;
+}
+
+.wtite-us-header {
+    width: 460px;
+    margin: 0 auto;
+    min-height: 318px;
+}
+.field-name {
+    float: left;
+    padding-top: 55px;
+    padding-bottom: 30px;
+}
+
+.user-e-mail {
+    float: right;
+    padding-top: 55px;
+    padding-bottom: 30px;
 }
 
 .wtite-us-header label {
     font-size: 18px;
     line-height: 18px;
+    display: block;
 }
 
-.wtite-us-footer {
-    background-color: rgb(244,244,244);
+.wtite-us-header input {
+    width: 212px;
+    height: 34px;
+}
+
+.wtite-us-header textarea {
+    width: 452px;
+    height: 110px;
 }
 
 .wtite-us-header input, .wtite-us-header textarea {
@@ -723,29 +1193,74 @@ body {
     border: 2px solid rgb(238,54,67);
 }
 
+.wtite-us-footer {
+    background-color: rgb(244,244,244);
+    min-height: 112px;
+    text-align: center;
+}
+
 .wtite-us-footer button {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
     color: rgb(255,255,255);
     border: none;
+    border-radius: 1px;
     background-color: rgb(238,54,67);
+    padding: 10px 200px 10px 200px;
+    margin-top: 37px;
+}
+
+.wtite-us-footer button:hover {
+    background-color: rgb(202,44,55);
+}
+
+.wtite-us-footer button:active {
+    background-color: rgb(186,39,50);
 }
 
 /* Модалка в каталоге */
 
 .modal-content-add-product {
     font-family: "Cuprum", "Arial", sans-serif;
-    box-shadow: inset 0 7px 0 0 rgb(255,83,87);
+    box-shadow: inset 0 7px 0 0 rgb(255,83,87), 0 20px 60px -2px black;
+    width: 620px;
+    margin: 0 auto;
+}
+
+.modal-content-close {
+    width: 22px;
+    height: 22px;
+    padding-top: 16px;
+    position: absolute;
+    background-image: url(../img/SVG/icon-close.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.add-product-header {
+    min-height: 170px;
+    background-image: url(../img/SVG/icon-mark.svg);
+    background-repeat: no-repeat;
+    background-position: 80px 55px;
 }
 
 .modal-content-add-product p {
     font-size: 30px;
     line-height: 30px;
+    margin: 0;
+    padding-left: 170px;
+    padding-top: 75px;
 }
 
 .add-product-button {
     background-color: rgb(244,244,244);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    min-height: 112px;
+    align-items: center;
 }
 
 .add-product-button a {
@@ -754,11 +1269,20 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: rgb(255,255,255);
-    border: none;
     background-color: rgb(238,54,67);
+    padding: 10px 61px 10px 61px;
 }
 
 .add-product-button a:last-child {
     color: rgb(0,0,0);
     background-color: rgb(255,255,255);
+    padding: 10px 46px 10px 46px;
+}
+
+.add-product-button .active-btn:hover {
+    background-color: rgb(202,44,55);
+}
+
+.add-product-button .active-btn:active {
+    background-color: rgb(186,39,50);
 }

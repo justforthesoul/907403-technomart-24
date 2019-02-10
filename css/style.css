@@ -13,7 +13,7 @@
 
 body {
     margin: 0 auto;
-    width: 1200px;
+    min-width: 1200px;
     font-size: 13px;
     line-height: 24px;
     font-family: "PT Sans", "Arial", sans-serif;
@@ -51,27 +51,25 @@ body {
     line-height: 18px;
 } 
 
-.header-top .container {
+.header-top .header-top-wrapper {
     display: flex;
 }
 
 .header-logo {
     background-color: rgb(238,54,67);
     text-align: center;
-    box-shadow: inset 0 -5px 0 0 rgb(181,41,51);
-    display: inline-block;
+    box-shadow: 0 5px 0 0 rgb(181,41,51);
     padding: 15px 55px 10px 55px;
-    position: absolute;
 }
 
 .header-logo:hover {
     background-color: rgb(202,44,55);
-    box-shadow: inset 0 -5px 0 0 rgb(154,33,42);
+    box-shadow: 0 5px 0 0 rgb(154,33,42);
 }
 
 .header-logo:active {
     background-color: rgb(186,39,50);
-    box-shadow: inset 0 -5px 0 0 rgb(142,30,38);
+    box-shadow: 0 5px 0 0 rgb(142,30,38);
 }
 
 .header-top input {
@@ -82,7 +80,6 @@ body {
     border: none;
     width: 270px;
     padding: 11.5px 0 11.5px 0;
-    margin-left: 220px;
     padding-left: 49px;
 }
 
@@ -211,9 +208,9 @@ body {
     margin: 0;
 }
 
-.user-navigation li {
+.header-center ul {
     list-style: none;
-    display: inline-block;
+    display: flex;
 }
 
 .login-link a, .registration-link a {
@@ -316,7 +313,7 @@ body {
 
 .header-navigation {
     background-color: rgb(50,66,92);
-    box-shadow: inset 0 -5px 0 0 rgb(41,52,73);
+    box-shadow: 0 5px 0 0 rgb(41,52,73);
     margin-top: 30px; 
 }
 
@@ -333,7 +330,7 @@ body {
     font-size: 17px;
     line-height: 17px;
     color: rgb(255,255,255);
-    padding: 20px 30.3px;
+    padding: 19px 30.3px;
 }
 
 .site-navigation a:hover {
@@ -377,8 +374,6 @@ body {
 
 .slider {
     margin-bottom: -8px;
-
-
 }
 
 .main-promo h3 {
@@ -442,6 +437,8 @@ body {
 .main-promo .promo {
     min-height: 123px;
     width: 300px;
+    padding-left: 20px;
+    box-sizing: border-box;
 }
 
 .slide-text {
@@ -663,7 +660,7 @@ body {
 .services-main-btn span:hover {
     color: rgb(50,66,92);
     background-color: rgb(255,255,255);
-    border: none;
+    border: 1px solid rgb(255,255,255);
 }
 
 .services-main-info h3 {
@@ -768,16 +765,17 @@ body {
 
 /* Индивидуальные стили для main  каталога*/
 
+.perforators-filters-catalog {
+    display: flex;
+    justify-content: space-between;
+}
+
 .perforators-filters {
-    display: inline-block;
     width: 220px;
-    vertical-align: top;
 }
 
 .perforators-catalog {
     width: 700px;
-    display: inline-block;
-    margin-left: 16px;
 }
 
 /* Оформление breadcrumbs */
@@ -833,6 +831,7 @@ body {
     padding: 10px 0 10px 18px;
     background-color: rgb(247,243,236);
     border-radius: 1px;
+    margin: 0;
 } 
 
 .perforators-filters li {
@@ -940,9 +939,9 @@ body {
     border: 1px solid rgb(238,54,67)
 }
 
-.perforators-catalog-page li {
+.perforators-catalog-page {
     list-style: none;
-    display: inline-block;
+    display: flex;
 }
 
 .perforators-catalog-page .active-page-btn {
@@ -990,25 +989,24 @@ body {
 .footer-logo {
     background-color: rgb(238,54,67);
     text-align: center;
-    box-shadow: inset 0 -5px 0 0 rgb(181,41,51);
+    box-shadow: 0 5px 0 0 rgb(181,41,51);
     display: inline-block;
     padding: 22px 41px 17px 41px;
-    position: absolute;
 }
 
 .footer-logo:hover {
     background-color: rgb(202,44,55);
-    box-shadow: inset 0 -5px 0 0 rgb(154,33,42);
+    box-shadow: 0 5px 0 0 rgb(154,33,42);
 }
 
 .footer-logo:active {
     background-color: rgb(186,39,50);
-    box-shadow: inset 0 -5px 0 0 rgb(142,30,38);
+    box-shadow: 0 5px 0 0 rgb(142,30,38);
 }
 
 .footer-contacts {
     width: 323px;
-    padding-top: 100px;
+    margin-top: 32px;
     padding-left: 3px;
 }
 
@@ -1081,10 +1079,9 @@ body {
     min-height: 107px;
 }
 
-.footer-bottom .container {
+.footer-bottom .footer-bottom-wrapper {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     padding-top: 35px;
 }
 
@@ -1093,24 +1090,26 @@ body {
 }
 
 .social-network-link {
-    padding-left: 160px;
+    margin-left: 160px;
 }
 
 .feedback {
-    padding-left: 118px;
+    margin-left: 118px;
 }
 
 .developed {
-    padding-left: 54px;
+    margin-left: 54px;
 }
 
+.social-network-link {
+    display: flex;
+}
 
 .social-network-link a {
     width:40px;
     height:40px;
     border-radius:50%;
     background: rgb(33,42,58);
-    display: inline-block;
 }
 
 .social-network-link a:hover, .social-network-link a:active {
@@ -1276,7 +1275,7 @@ body {
     line-height: 30px;
     margin: 0;
     padding-left: 170px;
-    padding-top: 75px;
+    margin-top: 75px;
 }
 
 .add-product-button {

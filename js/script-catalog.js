@@ -2,14 +2,14 @@
 
 var addProduct = document.querySelector(".perforators-catalog-list");
 var popupAddProduct = document.querySelector(".modal-content-add-product");
+var closeAddProduct = document.querySelector(".close-add-product");	
 
 addProduct.addEventListener("click", function(evt) {
 	if (evt.target.classList.contains("active-buy")) {
-	popupAddProduct.classList.add("modal-show");	
+	popupAddProduct.classList.add("modal-show");
+	closeAddProduct.focus();	
 	}	
 });
-
-var closeAddProduct = document.querySelector(".close-add-product");	
 
 closeAddProduct.addEventListener("click", function(evt) {
 	evt.preventDefault();	

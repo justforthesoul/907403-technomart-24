@@ -95,7 +95,20 @@
 							<h2 class="filter-header">Фильтр:</h2>
 							<fieldset class="filter-price">
 								<legend>Цена:</legend>
-								<span>Здесь будет рэйнж</span>
+								<div class="price-range">
+									<div class="range-circle-first"><span class="visually-hidden">Кружок рэйнджа</span></div>
+									<div class="range-circle-second"><span class="visually-hidden">Кружок рэйнджа</span></div>
+								</div>
+								<ul class="price-range-input">
+									<li>
+										<input type="text" name="min-price" id="min-price" placeholder="0">
+										<label for="min-price"><span class="visually-hidden">Минимальная цена</span></label>
+									</li>
+									<li>
+										<input type="text" name="max-price" id="max-price" placeholder="30000">
+										<label class="visually-hidden" for="max-price"><span class="visually-hidden">Ьаксимальная цена</span></label>
+									</li>
+								</ul>
 							</fieldset>
 							<fieldset class="filter-manufacturer">
 								<legend>Производители:</legend>
@@ -181,7 +194,7 @@
 		                        </div>
 							</li>
 							<li>
-								<div class="icon-new"></div>
+								<div class="icon-new"><span class="visually-hidden">Новинка</span></div>
 								<img src="img/JPG/Catalog_Perforator_3.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
 								<h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
 								<p class="new-price only-new-price">12500 Р.</p>
@@ -201,7 +214,7 @@
 		                        </div>
 							</li>
 							<li>
-								<div class="icon-new"></div>
+								<div class="icon-new"><span class="visually-hidden">Новинка</span></div>
 								<img src="img/JPG/Catalog_Perforator_2.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
 								<h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
 								<p class="old-price">30500 Р.</p>
@@ -221,7 +234,7 @@
 		                        </div>
 							</li>
 							<li>
-								<div class="icon-new"></div>
+								<div class="icon-new"><span class="visually-hidden">Новинка</span></div>
 								<img src="img/JPG/Catalog_Perforator_1.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
 								<h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
 								<p class="old-price">22500 Р.</p>
@@ -348,14 +361,14 @@
 		<div class="add-product-header">
 		  	<p>Товар добавлен в корзину!</p>
 		</div>
+		<button type="button" id="close-popup-add-product" class="close-add-product"></button>
       	<div class="add-product-button">
         	<a class="btn active-btn" href="#">Оформить заказ</a>
         	<a class="btn" href="#">Продолжить Покупки</a>
         </div>
         <label for="close-popup-add-product" class="visually-hidden">Закрытие окна</label>
-		<button type="button" id="close-popup-add-product" class="close-add-product"></button>
     </div>
-    <script type="text/javascript" src="js/script-catalog.js"></script>
+    <script src="js/script-catalog.js"></script>
 </body>
 </html>
 

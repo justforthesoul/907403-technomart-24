@@ -271,27 +271,52 @@ body {
 /* Индивидуальные стили для header-center-catalog */
 
 .authorized-user {
-    padding-top: 57px;
+    padding-top: 46px;
+}
+.authorized-user-menu {
+    width: 299px;
+    height: 45px;
+    background-color: rgb(255,255,255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 13px; 
 }
 
-.authorized-user .authorized-user-name {
+.authorized-user-menu .authorized-user-name {
     font-size: 21px;
     line-height: 21px;
     color: rgb(0,0,0);
-    background-color: rgb(255,255,255);
-    padding: 10.5px 67px 10.5px 48px;
-    background-image: url(../img/SVG/icon-logout.svg), url(../img/SVG/icon-user.svg);
+    background-image:url(../img/SVG/icon-user.svg);
     background-repeat: no-repeat;
-    background-position: 270px, 13px;
+    padding-left: 34px;
 }
 
-.authorized-user .authorized-user-name:hover {
-    background-image: url(../img/SVG/icon-logout-hover.svg), url(../img/SVG/icon-user-hover.svg);
+.authorized-user-menu:hover .authorized-user-name {
+    background-image: url(../img/SVG/icon-user-hover.svg);
 }
 
-.authorized-user .authorized-user-name:active {
+.authorized-user-menu:active .authorized-user-name {
     color: rgb(178,178,178);
-    background-image: url(../img/SVG/icon-logout.svg), url(../img/SVG/icon-user.svg);
+    background-image: url(../img/SVG/icon-user.svg);
+}
+
+.authorized-user-menu .de-authorization {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/SVG/icon-logout.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.authorized-user-menu:hover .de-authorization {
+    background-image: url(../img/SVG/icon-logout-hover.svg);
+}
+
+.authorized-user-menu:active .de-authorization {
+    background-image: url(../img/SVG/icon-logout.svg);
 }
 
 .authorized-navigation {
@@ -308,8 +333,8 @@ body {
     margin-left: 32px;
 }
 
-.authorized-navigation li:first-child {
-    list-style: none;
+.authorized-navigation li:last-child {
+    list-style-type: disc;
 }
 
 .user-order a, .personal-account a {
@@ -383,7 +408,6 @@ body {
 
 .promo-left, .promo-right {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between; 
     justify-content: space-between;
@@ -1050,7 +1074,8 @@ li:hover .product-active {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0;
+    align-items: center;
+    padding-left: 0;
     width: 360px;
     position: relative;
 }   
@@ -1102,6 +1127,7 @@ li:hover .product-active {
 }
 
 .perforators-header h2 {
+    margin-top: 0;
     font-size: 30px;
     line-height: 30px;
     font-weight: normal;

@@ -6,7 +6,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/min-style.css">
 </head>
 <body>
 	<header class="main-header">
@@ -104,15 +104,15 @@
 								</div>
 								<ul class="price-range-input">
 									<li>
+										<label for="min-price" class="visually-hidden">Минимальная цена</label>
 										<input type="text" name="min-price" id="min-price" placeholder="0">
-										<label for="min-price"><span class="visually-hidden">Минимальная цена</span></label>
 									</li>
 									<li>
 										<span>—</span>
 									</li>
 									<li>
+										<label class="visually-hidden" for="max-price">Максимальная цена</label>
 										<input type="text" name="max-price" id="max-price" placeholder="30000">
-										<label class="visually-hidden" for="max-price"><span class="visually-hidden">Максимальная цена</span></label>
 									</li>
 								</ul>
 							</div>
@@ -173,10 +173,10 @@
 				            </ul>
 				            <ul class="sorting-by-up-down"> 	
 				              	<li>
-				                	<a class="sorting-up sorting-up-active"></a>
+				                	<a class="sorting-up sorting-up-active"><span class="visually-hidden">Сортировка по убыванию</span></a>
 				              	</li>
 				              	<li>
-				                	<a class="sorting-down" href="#"></a>
+				                	<a class="sorting-down" href="#"><span class="visually-hidden">Сортировка по возрастанию</span></a>
 				              	</li>
 				            </ul>
 						</div>
@@ -376,7 +376,7 @@
         </div>
         <label for="close-popup-add-product" class="visually-hidden">Закрытие окна</label>
     </div>
-    <script src="js/script-catalog.js"></script>
+    <script src="js/min-script-catalog.js"></script>
 </body>
 </html>
 
